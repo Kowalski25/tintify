@@ -1,21 +1,17 @@
-import { createBrowserRouter } from "react-router-dom";
+import { Routes as AppRoutes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 
-const Routes = createBrowserRouter([
-  {
-    path: '',
-    element: <Home />,
-  },
-  {
-    path: '/about',
-    element: <About />,
-  },
-  
-  // unhandled or nonexisting routes
-  {
-    path: "*",
-  }
-]);
+const Routes = () => {
+  return (
+    <AppRoutes>
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+
+      {/* for non-existent routes/pages */}
+      <Route path='*' /> 
+    </AppRoutes>
+  );
+};
 
 export default Routes;

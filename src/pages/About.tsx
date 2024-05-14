@@ -1,13 +1,9 @@
-import "./About.module.scss";
+import React from 'react'
 
 const About = () => {
   return (
-    <div>
-      <header>
-        <h2>About</h2>
-      </header>
-    </div>
-  );
-};
+    <div>About</div>
+  )
+}
 
 export default About;
