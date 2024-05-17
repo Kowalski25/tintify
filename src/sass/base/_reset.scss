@@ -1,18 +1,56 @@
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 * {
-  font: inherit;
   margin: 0;
-  padding: 0;
+  // padding: 0;
 }
 
-img,
-picture,
+// Added to make it possible to use percentage-based heights within the app.
+// Now that dynamic viewport units are well-supported, however, this hacky fix 
+// is no longer required or can be optional.
+html,
+body {
+  height: 100%;
+}
+
+img, 
+picture, 
+video, 
+canvas, 
 svg {
   display: block;
   max-width: 100%;
 }
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  overflow-wrap: break-word;
+}
+
+p {
+  hyphens: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  isolation: isolate;
+}
+

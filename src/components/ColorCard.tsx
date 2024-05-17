@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import { ChildrenProps, ClassNameProps } from "../types";
 
-const ColorCard = () => {
-  return (
-    <td>
-      
-    </td>
-  )
-}
+interface ColorCardProps extends ChildrenProps, ClassNameProps {}
 
-export default ColorCard
+const ColorCard: React.FC<ColorCardProps> = ({ children, className }) => {
+  return <td className={className}>{children}</td>;
+};
+
+export default ColorCard;

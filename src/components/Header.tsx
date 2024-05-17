@@ -1,13 +1,16 @@
+import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import LinkBase from "./LinkBase";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+interface HeaderProps {}
+
+const Header: React.FC<HeaderProps> = () => {
   return (
-    <div>
+    <header>
       <div>
         <ThemeSwitcher />
-        <nav>
+        <nav className="cluster">
           <Link to='/about'>About</Link>
           <LinkBase
             href='https://github.com/Kowalski25/tintify'
@@ -17,15 +20,15 @@ const Header = () => {
         </nav>
       </div>
 
-      <header className=''>
+      <div className=''>
         <div className=''>
           <h1>
             <a href='/'>Tintify</a>
           </h1>
-          <p>Generate tint and shade</p>
+          <p>Tint and Shades Generator</p>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
