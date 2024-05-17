@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 interface LinkProps {
-  href?: string;
+  href: string;
   ariaLabel?: string;
   className?: string;
-  children?: ReactNode;
+  children?: React.ReactNode;
 }
 
 const LinkBase: React.FC<LinkProps> = ({

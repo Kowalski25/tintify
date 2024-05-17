@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { ChildrenProps, ClassNameProps } from "../types";
 
-const ButtonBase = () => {
-  return (
-    <div>ButtonBase</div>
-  )
-}
+interface ButtonBaseProps extends ChildrenProps, ClassNameProps {}
 
-export default ButtonBase
+const ButtonBase: React.FC<ButtonBaseProps> = ({ children, className }) => {
+  return <button className={className}>{children}</button>;
+};
+
+export default ButtonBase;

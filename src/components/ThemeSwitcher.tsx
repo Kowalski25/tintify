@@ -1,8 +1,12 @@
-const ThemeSwitcher = () => {
+import React from "react";
+
+interface ThemeSwitcherProps {}
+
+const ThemeSwitcher: React.FC<ThemeSwitcherProps> = () => {
   return (
     <div>
-      <label>
-        <input type="checkbox" />
+      <label className="toggle">
+        <input type='checkbox' />
         <span></span>
         <span>Dark mode</span>
       </label>
