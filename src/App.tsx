@@ -1,9 +1,8 @@
-import "./App.scss";
 import { BrowserRouter as Router } from "react-router-dom";
-import Routes from "./Routes";
+import Routes from "./routes/Routes";
 import { Footer, Header } from "./components";
 
-function App() {
+const App = () => {
   return (
     <Router>
       {/* Shared component across the app */}
@@ -18,6 +17,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
