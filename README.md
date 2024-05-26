@@ -1,2 +1,2 @@
 # Tintify
-## Personal tint and shades generator based and inspired from Michael Edelstone and Nick Wing.
+## Personal tint and shades generator inspired from Michael Edelstone and Nick Wing.
