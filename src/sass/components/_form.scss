@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.form {
+  display: grid;
+
+  &-label {
+    font-size: $form-label-font-size;
+  }
+
+  &-input:not(.button) {
+    font-size: $form-input-font-size;
+    padding: $form-input-padding;
+  }
+
+  &[data-width="narrow"] {
+    max-width: $form-max-width-narrow;
+  }
+
+  &[data-width='wide'] {
+    max-width: $form-max-width-wide;
+  }
+}

@@ -1,0 +1,5 @@
+@use "../abstracts/" as *;
+
+.site-header {
+  justify-content: $site-header-justification;
+}

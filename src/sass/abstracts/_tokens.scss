@@ -2,6 +2,8 @@
 @use "typography" as *;
 @use "sizes" as *;
 
+$enable-media-query-dark-mode: false;
+
 // set to 0 to disable
 $letter-spacing-loose: 0;
 
@@ -19,4 +21,27 @@ $button-border: 0;
 $button-border-radius: $border-radius-1;
 $button-font-size: $font-size-400;
 $button-font-weight: $font-weight-medium;
+$button-line-height: 1;
 $button-padding: 0.75em 2em;
+
+// layout
+$container-max-width: 64em;
+$container-max-width-narrow: 40em;
+$container-max-width-wide: 75em;
+$container-min-margin-inline: $size-4;
+
+$grid-gap: $size-6;
+$flex-group-gap: $size-4;
+
+// forms
+$form-label-font-size: $font-size-300;
+$form-max-width-narrow: 32em;
+$form-max-width-wide: 100%;
+
+$form-input-padding: $size-2;
+$form-input-font-size: $body-font-size;
+
+// site-header
+$site-header-justification: space-between;
+
+// site-footer

@@ -1,20 +1,12 @@
 @use "sass:map";
+@use "colors" as *;
 @use "typography" as *;
 @use "sizes" as *;
+@use "tokens" as *;
 
-/*
- * Not working if being called inside $font-size-(value) variables
- * _typography.scss file but it does work when called directly
- * inside an element style:
- * e.g 
- * ( h1 { font-size: fn("900") }; ) // works fine
- * ( h1 { font-size: $font-size-900 }; ) // doesn't work 
-
- TODO - Will troubleshoot this later on.
-*/
 @function fs($font-size, $map-size: "small") {
-  @if map-has-key($font-sizes, $map-size, $font-size) {
-    @return map-get($font-sizes, $map-size, $font-size);
+  @if map.has-key($font-sizes, $map-size, $font-size) {
+    @return map.get($font-sizes, $map-size, $font-size);
   } @else {
     @error '$font-sizes does not have that size!';
   }
@@ -27,3 +19,4 @@
     @error '$sizes does not have that size!';
   }
 }
+

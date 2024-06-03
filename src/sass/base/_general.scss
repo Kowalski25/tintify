@@ -6,15 +6,21 @@ body {
   font-weight: $body-font-weight;
   font-synthesis: none;
   line-height: $body-line-height;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 95%);
   background-clip: text;
+  font-size: $font-size-800;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.github-logo {
+  max-height: 1.5rem;
+  max-width: 1.5rem;
+}
