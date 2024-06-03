@@ -11,6 +11,7 @@ import InputBase from "./InputBase";
 import LabelBase from "./LabelBase";
 import ButtonBase from "./ButtonBase";
 import ColorCard from "./home/ColorCard";
+import TertiaryHeadingBase from "./TertiaryHeadingBase";
 
 export {
   Header,
@@ -24,6 +25,7 @@ export {
   InputBase,
   LabelBase,
   ButtonBase,
+  TertiaryHeadingBase,
 
   // Home
   TintsGeneratorForm,

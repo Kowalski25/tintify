@@ -1,7 +1,7 @@
 import React from "react";
-import { ClassNameProps } from "../types";
+import { ClassNameProps, InputHTMLProps } from "../types";
 
-interface InputProps extends ClassNameProps {
+interface InputProps extends ClassNameProps, InputHTMLProps {
   id?: string;
   name?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -14,6 +14,7 @@ const InputBase: React.FC<InputProps> = ({
   name,
   onChange,
   placeholder,
+  ...props
 }) => {
   return (
     <input
@@ -22,6 +23,7 @@ const InputBase: React.FC<InputProps> = ({
       id={id}
       onChange={onChange}
       placeholder={placeholder}
+      {...props}
     />
   );
 };

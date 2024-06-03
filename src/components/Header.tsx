@@ -1,32 +1,38 @@
 import React from "react";
+import { Tooltip } from "react-tooltip";
 import ThemeSwitcher from "./ThemeSwitcher";
 import LinkBase from "./LinkBase";
-import { Link } from "react-router-dom";
 
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
   return (
-    <header>
+    <header className='site-header flex-group mx-auto padding-block-8'>
       <div>
-        <ThemeSwitcher />
-        <nav className="cluster">
-          <Link to='/about'>About</Link>
+        <h1>
+          <a href='/'>Tintify</a>
+        </h1>
+      </div>
+      <div className='flex-group'>
+        <nav className='cluster'>
           <LinkBase
             href='https://github.com/Kowalski25/tintify'
             ariaLabel='View website source code'>
-            <span>Source Code</span>
+            <img
+              src='/src/assets/images/github_logo.svg'
+              className='github-logo'
+              data-tooltip-id='github'
+              alt="Github logo"
+            />
           </LinkBase>
+          <ThemeSwitcher />
         </nav>
-      </div>
-
-      <div className=''>
-        <div className=''>
-          <h1>
-            <a href='/'>Tintify</a>
-          </h1>
-          <p>Tint and Shades Generator</p>
-        </div>
+        <Tooltip
+          id='github'
+          place='bottom'
+          content='View source code'
+          style={{ padding: "0.25rem 0.5rem"}}
+        />
       </div>
     </header>
   );

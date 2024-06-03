@@ -9,9 +9,10 @@ const ButtonBase: React.FC<ButtonBaseProps> = ({
   children,
   className,
   type,
+  ...props
 }) => {
   return (
-    <button className={className} type={type}>
+    <button className={className} type={type} {...props}>
       {children}
     </button>
   );
