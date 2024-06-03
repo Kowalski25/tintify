@@ -7,3 +7,9 @@ export interface ChildrenProps {
 export interface ClassNameProps {
   className?: string;
 }
+
+export interface InputHTMLProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+export interface FormHTMLProps
+  extends React.FormHTMLAttributes<HTMLFormElement> {}
