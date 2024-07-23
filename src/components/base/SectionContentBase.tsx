@@ -1,8 +1,8 @@
 import React from "react";
-import { ChildrenProps, ClassNameProps } from "../types";
+import { ChildrenProps, ClassNameProps } from "../../types";
 
 interface SectionContentProps extends ChildrenProps, ClassNameProps {
-  title: string;
+  title?: string;
 }
 
 const SectionContentBase: React.FC<SectionContentProps> = ({
@@ -12,7 +12,7 @@ const SectionContentBase: React.FC<SectionContentProps> = ({
 }) => {
   return (
     <section className={className}>
-      <h2>{title}</h2>
+      <h2 className='margin-block-end-3'>{title}</h2>
       {children}
     </section>
   );

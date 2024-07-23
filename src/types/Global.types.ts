@@ -1,5 +1,10 @@
 import React from "react";
 
+export interface CommonProps {
+  children?: React.ReactNode;
+  className?: string;
+}
+
 export interface ChildrenProps {
   children?: React.ReactNode;
 }

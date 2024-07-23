@@ -1,14 +1,23 @@
 import { Routes as AppRoutes, Route } from "react-router-dom";
-import { Home, About } from "../pages";
+import { Home, About, UnhandledRoute } from "../pages";
 
-const Routes = () => {
+interface RouteProps {
+  path: string;
+  element: React.ReactElement;
+}
+
+const routes: RouteProps[] = [
+  { path: "/", element: <Home /> },
+  { path: "/about", element: <About /> },
+  { path: "*", element: <UnhandledRoute /> },
+];
+
+const Routes: React.FC = () => {
   return (
     <AppRoutes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-
-      {/* for non-existent routes/pages */}
-      <Route path='*' />
+      {routes.map((route) => (
+        <Route key={route.path} path={route.path} element={route.element} />
+      ))}
     </AppRoutes>
   );
 };

@@ -8,6 +8,9 @@
   }
 
   &-input:not(.button) {
+    background-color: #f5f5f5;
+    border-radius: $form-border-radius;
+    border: 1px solid #ccc;
     font-size: $form-input-font-size;
     padding: $form-input-padding;
   }

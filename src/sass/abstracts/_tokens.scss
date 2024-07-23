@@ -9,8 +9,10 @@ $letter-spacing-loose: 0;
 
 $border-radius-1: $size-2;
 $border-radius-2: $size-4;
+$border-radius-round: 99vmin;
 
 // body
+$body-background-color: #ffffff;
 $body-font-size: $font-size-400;
 $body-font-family: $font-family-base;
 $body-font-weight: $font-weight-regular;
@@ -24,21 +26,26 @@ $button-font-weight: $font-weight-medium;
 $button-line-height: 1;
 $button-padding: 0.75em 2em;
 
+// heading
+
+
 // layout
-$container-max-width: 64em;
-$container-max-width-narrow: 40em;
+$container-max-width: 60em;
+$container-max-width-narrow: 48em;
 $container-max-width-wide: 75em;
 $container-min-margin-inline: $size-4;
 
 $grid-gap: $size-6;
+$grid-gap-narrow: $size-2;
 $flex-group-gap: $size-4;
 
 // forms
 $form-label-font-size: $font-size-300;
-$form-max-width-narrow: 32em;
+$form-border-radius: $border-radius-1;
+$form-max-width-narrow: 28em;
 $form-max-width-wide: 100%;
 
-$form-input-padding: $size-2;
+$form-input-padding: $size-3;
 $form-input-font-size: $body-font-size;
 
 // site-header

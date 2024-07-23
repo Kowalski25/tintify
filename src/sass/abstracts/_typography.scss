@@ -6,16 +6,6 @@ $-ff-serif: serif;
 $font-family-base: $-ff-sans-serif;
 $font-family-accent: $-ff-serif;
 
-$-fs-100: 0.5rem;
-$-fs-200: 0.875rem;
-$-fs-300: 0.925rem;
-$-fs-400: 1rem;
-$-fs-500: 1.125rem;
-$-fs-600: 1.5rem;
-$-fs-700: 1.75rem;
-$-fs-800: 2.25rem;
-$-fs-900: 3.75rem;
-
 $font-sizes: (
   "small": (
     "900": 3.75rem,
@@ -25,7 +15,8 @@ $font-sizes: (
     "500": 1.125rem,
     "400": 1rem,
     "300": 0.925rem,
-    "200": 0.875rem,
+    "200": 0.8125rem,
+    "100": 0.75rem,
   ),
   "large": (
     "900": 3.75rem,
@@ -35,7 +26,8 @@ $font-sizes: (
     "500": 1.125rem,
     "400": 1rem,
     "300": 0.925rem,
-    "200": 0.875rem,
+    "200": 0.8125rem,
+    "100": 0.75rem,
   ),
 );
 
@@ -54,9 +46,11 @@ $-fw-400: 400;
 $-fw-500: 500;
 $-fw-600: 600;
 $-fw-700: 700;
+$-fw-900: 900;
 
 $font-weight-light: $-fw-300;
 $font-weight-regular: $-fw-400;
 $font-weight-medium: $-fw-500;
 $font-weight-semibold: $-fw-600;
 $font-weight-bold: $-fw-700;
+$font-weight-black: $-fw-900;

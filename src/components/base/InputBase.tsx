@@ -1,5 +1,5 @@
 import React from "react";
-import { ClassNameProps, InputHTMLProps } from "../types";
+import { ClassNameProps, InputHTMLProps } from "../../types";
 
 interface InputProps extends ClassNameProps, InputHTMLProps {
   id?: string;

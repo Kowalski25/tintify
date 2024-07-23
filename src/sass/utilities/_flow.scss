@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1em;
+}
+
+.flow-narrow > *:where(:not(:first-child)) {
+  margin-top: 0.5em;
+}
+
+.flow-wide > *:where(:not(:first-child)) {
+  margin-top: 2em;
+}

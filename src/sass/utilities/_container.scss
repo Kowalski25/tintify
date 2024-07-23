@@ -7,11 +7,11 @@
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
   
-  &[data-type='narrow'] {
+  &[data-width='narrow'] {
     --max-width: #{$container-max-width-narrow};
   }
 
-  &[data-type='wide'] {
+  &[data-width='wide'] {
     --max-width: #{$container-max-width-wide};
   }
 }

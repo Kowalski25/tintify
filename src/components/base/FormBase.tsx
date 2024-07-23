@@ -1,5 +1,5 @@
 import React from "react";
-import { ChildrenProps, ClassNameProps, FormHTMLProps } from "../types";
+import { ChildrenProps, ClassNameProps, FormHTMLProps } from "../../types";
 
 interface FormProps extends ChildrenProps, ClassNameProps, FormHTMLProps {
   onSubmit?: (e: React.FormEvent) => void;

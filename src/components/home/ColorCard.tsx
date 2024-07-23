@@ -13,9 +13,9 @@ const ColorCard: React.FC<ColorCardProps> = ({
   children,
 }) => {
   return (
-    <td className={className} key={key} style={{ backgroundColor}}>
+    <div className={className} key={key} style={{ backgroundColor}}>
       {children}
-    </td>
+    </div>
   );
 };
 

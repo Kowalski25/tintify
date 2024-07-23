@@ -1,2 +1,3 @@
-export * from './common';
-export * from './aboutContent';
+export * from './Global.types';
+export * from './AboutContent.types';
+export * from './ColorUtils.types';

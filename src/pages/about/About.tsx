@@ -4,11 +4,11 @@ import {
   MainContentBase,
   SectionContentBase,
 } from "../../components";
-import aboutContent from "./aboutContent";
+import aboutContent from "./about.content";
 
 const About: React.FC = () => {
   return (
-    <MainContentBase>
+    <MainContentBase className='flow-wide'>
       <SectionContentBase title={aboutContent.section1.title}>
         <p>{aboutContent.section1.content}</p>
       </SectionContentBase>
@@ -26,9 +26,8 @@ const About: React.FC = () => {
           quaerat tempore soluta mollitia?
         </p>
       </SectionContentBase>
-
       <SectionContentBase title='Other details'>
-        <ul>
+        <ul className='flow-narrow'>
           <ListItemBase>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Necessitatibus voluptatem cupiditate voluptas perferendis porro

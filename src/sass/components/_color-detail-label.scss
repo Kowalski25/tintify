@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.color-detail-label {
+  cursor: default;
+  font-size: $font-size-200;
+  font-weight: $font-weight-regular;
+
+  &[data-type="primary"]{
+    border-radius: 0.25rem;
+    font-weight: $font-weight-medium;
+
+    &:where(:hover, :focus) {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

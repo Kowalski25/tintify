@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.align {
+  &-mx-auto {
+    margin-inline: auto;
+  }
+}

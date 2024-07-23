@@ -1,7 +1,8 @@
 @use '../abstracts/' as *;
 
 .color-cards-section {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   overflow-x: auto;
   width: 100%;
 }

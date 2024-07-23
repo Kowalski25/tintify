@@ -1,5 +1,5 @@
 import React from "react";
-import { ChildrenProps, ClassNameProps } from "../types";
+import { ChildrenProps, ClassNameProps } from "../../types";
 
 interface ListItemProps extends ChildrenProps, ClassNameProps {}
 
